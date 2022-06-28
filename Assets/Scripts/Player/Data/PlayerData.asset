@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331a988c78a437044ad61cdcb9d73a1f, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  MovementVelocity: 10
+  JumpVelocity: 15
+  AmountOfJumps: 1
+  CoyoteTime: 0.2
+  VariableJumpHeightMultiplier: 0.5
+  AttackVelocity: 10
+  GroundCheckRadius: 0.3
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  ZeroFriction: {fileID: 6200000, guid: 16acb5f5e685dcb40a8c1bd9ead2b1a3, type: 2}
+  FullFriction: {fileID: 6200000, guid: ff27af7ea029540438567851d6a2bfd9, type: 2}

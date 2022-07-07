@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class LevelDisplay : MonoBehaviour
 {
-    [SerializeField] private Player_old _player;
+    [SerializeField] private Player _player;
     [SerializeField] private TMP_Text _levelDisplay;
 
     private void OnEnable()
     {
-        _player.LevelChanged.AddListener(OhLevelChanged);
+        //_player.LevelChanged.AddListener(OhLevelChanged);
     }
 
     private void OhLevelChanged(int level)

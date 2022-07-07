@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class ExperienceDisplay : MonoBehaviour
 {
-    [SerializeField] private Player_old _player;
+    [SerializeField] private Player _player;
     [SerializeField] private TMP_Text _experienceDisplay;
 
     private void OnEnable()
     {
-        _player.ExperienceChanged.AddListener(OhExperienceChanged);
+        //_player.ExperienceChanged.AddListener(OhExperienceChanged);
     }
 
     private void OhExperienceChanged(int experience)

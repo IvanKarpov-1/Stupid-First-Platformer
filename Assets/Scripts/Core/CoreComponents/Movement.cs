@@ -54,7 +54,7 @@ public class Movement : CoreComponent
         CurrentVelocity = _workspace;
     }
 
-    public void SetVelocity(float velocityX, float velocityY)
+    public void SetVelocity(float velocityX, float velocityY = 0f)
     {
         _workspace.Set(-velocityX * _slopeNormalPerpedicular.x, -velocityY * _slopeNormalPerpedicular.y);
         RB.velocity = _workspace;
@@ -71,7 +71,7 @@ public class Movement : CoreComponent
         }
     }
 
-    private void Flip()
+    public void Flip()
     {
         FacingDirection *= -1;
         RB.transform.Rotate(0.0f, 180.0f, 0, 0f);

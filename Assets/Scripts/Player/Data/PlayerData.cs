@@ -17,4 +17,7 @@ public class PlayerData : ScriptableObject
 
     [Header("Attack State")]
     public float AttackVelocity = 5f;
+
+    [Header("Hit State")]
+    public float StunTime = 0.3f;
 }

@@ -25,11 +25,6 @@ public class PlayerGroundedState : PlayerState
         Player.JumpState.ResetAmountOfJumpsLeft();
     }
 
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
     public override void LogicUpdate()
     {
         base.LogicUpdate();
@@ -54,10 +49,5 @@ public class PlayerGroundedState : PlayerState
             Player.InAirState.StartCoyoteTime();
             StateMachine.ChangeState(Player.InAirState);
         }
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 }

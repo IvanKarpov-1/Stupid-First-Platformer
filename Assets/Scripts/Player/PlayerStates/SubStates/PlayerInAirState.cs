@@ -20,16 +20,6 @@ public class PlayerInAirState : PlayerState
         _isGrounded = Core.CollisionSenses.Ground;
     }
 
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
     public override void LogicUpdate()
     {
         base.LogicUpdate();
@@ -58,11 +48,6 @@ public class PlayerInAirState : PlayerState
 
             Player.Animator.SetFloat("yVelocity", Core.Movement.CurrentVelocity.y);
         }
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 
     private void CheckJumpMultiplier()

@@ -15,11 +15,6 @@ public class PlayerAbilityState : PlayerState
         _isGrounded = Core.CollisionSenses.Ground;
     }
 
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
     public override void Exit()
     {
         base.Exit();
@@ -42,10 +37,5 @@ public class PlayerAbilityState : PlayerState
                 StateMachine.ChangeState(Player.InAirState);
             }
         }
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 }

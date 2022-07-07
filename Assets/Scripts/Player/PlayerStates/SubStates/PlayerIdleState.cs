@@ -4,25 +4,17 @@ public class PlayerIdleState : PlayerGroundedState
     {
     }
 
-    public override void DoCkecks()
-    {
-        base.DoCkecks();
-    }
-
     public override void Enter()
     {
         base.Enter();
         Core.Movement.SetVelocityX(0f);
     }
 
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        Core.Movement.SetVelocityX(0f);
 
         if (XInput != 0 && IsExetingState == false)
         {
@@ -30,10 +22,5 @@ public class PlayerIdleState : PlayerGroundedState
 
             StateMachine.ChangeState(Player.MoveState);
         }
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 }
